@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: brown;
+            border: none;
+            border-radius: 10px;
+            width: 50vh;
+            height: 50vh;
+            box-shadow: 3px 6px 5px;
+        }
+        .header{
+            text-align: center;
+            font-size: larger;
+            font-weight: 900;
+            border-bottom:0.5px solid black;
+            margin-bottom: 10px;
+        }
+        .addtask{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #taskinput{
+            border-radius: 8px;
+            box-shadow: 1px 2px 2px;
+            height: 20px;
+        }
+        button{
+            border-radius: 8px;
+        }
+        .unlist{
+            border-radius: 8px;
+            border: 0.5px solid yellow;
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>TO-DO List</p>
+        </div>
+        <div class="addtask">
+            <input type="text" placeholder="Enter Task To Do :" id="taskinput">
+            <button onclick=addtask()>ADD</button>
+        </div>
+        <ul class="unlist" id="tasklist">
+
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
